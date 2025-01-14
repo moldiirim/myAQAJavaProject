@@ -1,6 +1,6 @@
 package lesson_7;
 
-public class task8 {
+public class Task8 {
     public static void multiplyLessThanSix(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 6) {

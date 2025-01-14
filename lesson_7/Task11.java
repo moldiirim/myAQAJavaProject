@@ -1,6 +1,6 @@
 package lesson_7;
 
-public class task11 {
+public class Task11 {
     public static void shiftArray(int[] arr, int n) {
         int length = arr.length;
         n = n % length;

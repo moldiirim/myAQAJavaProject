@@ -1,6 +1,6 @@
 package lesson_7;
 
-public class task5 {
+public class Task5 {
     public static boolean isLeapYear(int year) {
         if (year % 4 == 0) {
             if (year % 100 == 0) {
