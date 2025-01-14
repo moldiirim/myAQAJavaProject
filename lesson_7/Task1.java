@@ -11,5 +11,5 @@ public class Task1 {
         return sum >= 10 && sum <= 20;
     }
 }
-}
+
 
