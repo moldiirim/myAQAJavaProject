@@ -1,0 +1,23 @@
+public class PhoneDirectoryTest {
+    public static void main(String[] args) {
+        PhoneDirectory phonebook = new PhoneDirectory();
+
+        // Добавление записей
+        phonebook.add("Smith", "123-456-7890");
+        phonebook.add("Smith", "987-654-3210");
+        phonebook.add("Johnson", "555-555-5555");
+        phonebook.add("Williams", "111-222-3333");
+
+        // Получение записей
+        System.out.println("Phonebook results:");
+        for (String surname : new String[]{"Smith", "Johnson", "Brown"}) {
+            System.out.print(surname + ": ");
+            List<String> numbers = phonebook.get(surname);
+            if (numbers.isEmpty()) {
+                System.out.println("No entries found.");
+            } else {
+                System.out.println(String.join(", ", numbers));
+            }
+        }
+    }
+}
