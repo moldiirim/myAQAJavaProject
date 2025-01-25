@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class WordProcessorTest {
+    public static void main(String[] args) {
+        List<String> words = Arrays.asList("apple", "banana", "orange", "apple", "kiwi", "banana", "grape", "apple", "kiwi", "peach");
+        WordProcessor wordProcessor = new WordProcessor(words);
+
+        // Уникальные слова
+        System.out.println("Unique words: " + wordProcessor.getUniqueWords());
+
+        // Количество вхождений каждого слова
+        Map<String, Integer> wordCounts = wordProcessor.countWordOccurrences();
+        System.out.println("Word counts:");
+        for (Map.Entry<String, Integer> entry : wordCounts.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
